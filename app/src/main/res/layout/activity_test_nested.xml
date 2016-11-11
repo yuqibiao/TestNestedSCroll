@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="NestedScrolling机制测试"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@android:color/white" />
+
+   <com.yyyu.testnestedscroll.nested.HiddenHeaderView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <ImageView
+           android:id="@id/id_nested_header"
+           android:layout_width="match_parent"
+           android:layout_height="150dp"
+           android:scaleType="centerCrop"
+           android:src="@mipmap/icon_test" />
+
+       <android.support.v4.widget.NestedScrollView
+           android:id="@+id/nsv_nested"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <include layout="@layout/pt_content" />
+
+       </android.support.v4.widget.NestedScrollView>
+
+   </com.yyyu.testnestedscroll.nested.HiddenHeaderView>
+
+
+
+</LinearLayout>

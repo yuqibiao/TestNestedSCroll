@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--自定义折线图控件的属性-->
+    <declare-styleable name="MyLineChart">
+        <!--标注字体的大小-->
+        <attr name="label_text_size" format="dimension"/>
+        <!--标注字体的颜色-->
+        <attr name="label_text_color" format="color"/>
+        <!--线的宽度-->
+        <attr name="line_width" format="dimension"/>
+    </declare-styleable>
+
+</resources>
